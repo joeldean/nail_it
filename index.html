@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="css/style.css"/>
-	
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   		<script src="js/jquery-1.10.2.js"></script>
   		<script src="js/jquery-ui.js"></script>
 
@@ -28,7 +28,7 @@
 				<div id="accordion">
 	 		
 
-	 			<h2>POLISH SEARCH</h2>
+	 			<h2>About</h2>
 
 			
 				<div class="one">
@@ -36,13 +36,13 @@
 	  			</div>	
 
 
-	  		<h2>COLOR MATCH</h2>
+	  		<h2>Color Match</h2>
 
 	  			<div class="two">
 	  				
 				</div>
 	  		
-	  		<h2>POLISH SEARCH</h2>
+	  		<h2>Polish Search</h2>
 
 	  		
 	  		
@@ -51,14 +51,49 @@
 				</div>
 					
 
-	   		<h2>PURCHASE</h2>
+	   		<h2>Purchase</h2>
 
 	   		
 
 
 	  			<div class="four">
-			
-	    	
+	  				<div>
+
+	  					<p>Login to buy our latest colors!</p>
+
+
+	  				</div>
+
+
+
+	  				<form id="login">
+      					<label>Username</label>
+      					<input id="username" type="text">
+     					 <label>Password</label>
+      					<input type="password">
+						<br><br>
+      					<input type="submit">
+    </form>
+
+    <div class="error">
+      <p>UH OH!<br>Your username <br> and/or password <br> is incorrect.<br>FTW!<br><br><a href="javascript:history.go(0)">Refresh</a></p>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $("#login").submit(function(event) {
+          event.preventDefault();
+          var username = $("input[type=text]").val();
+          var password = $("input[type=password]").val();
+
+          if (username === "shirmung" && password === "woof") {
+            window.location.href = "http://shirmung.com";
+          } else {
+            $(".error").fadeIn(1000);
+          }
+        });
+      });
+    </script>
 	  			</div>
 	  		</div>
 	  	</div>
