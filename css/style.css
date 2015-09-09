@@ -39,7 +39,7 @@ h2 {font-family: 'JosefinSans';
 
 p {
 	font-family: 'JosefinSans';
-	font-size: 30px;
+	font-size: 25px;
 	color:purple;
 	margin-bottom: 0px;
 
@@ -49,6 +49,60 @@ a {
 	color: white;
 	text-decoration: underline;
 }
+
+
+form.search {
+    display: inline-block;
+    margin: 0;
+
+    padding: 9px 9px 9px 9px;
+    border-radius: 5px;
+
+}
+form:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+label.search {
+    position: absolute;
+    left: -9999px;
+}
+input.search, button.search {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+input.search {
+    border: 1px solid #BAA994;
+    width: 222px;      
+    height: 38px;
+    box-shadow: inset -2px 1px 1px #D5D5D5, 1px 1px #EDE7DF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-left: 36px;
+    font-size: 16px;
+   }
+button.search {
+    margin-left: -1px;
+    border: 1px solid #7DA07E;
+    border-radius: 0 5px 5px 0;
+    padding-right: 13px;
+    padding-left: 13px;
+    padding-top: 3px;
+    height: 38px;
+    background-color: #BDD3BE;
+    background-image: -ms-linear-gradient(top, #BDD3BE 0%, #93B894 80%);
+    background-image: -moz-linear-gradient(top, #BDD3BE 0%, #93B894 80%);
+    background-image: -webkit-linear-gradient(top, #BDD3BE 0%, #93B894 80%);
+    background-image: linear-gradient(top, #BDD3BE 0%, #93B894 80%);
+    box-shadow: inset 0 1px 1px #DCE7DC, 0 1px #EDE7DF;
+    color: #557B56;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 0 1px #DCE7DC;
+}
+
 
 
 .one {
@@ -69,7 +123,7 @@ a {
 }
 
 .four {
-	height: 1000px;
+	height: 50px;
 
 }
 
